@@ -1,5 +1,5 @@
 # qrcode_song
-自己做的一个小工具，基于Python3.5,requests,beautifulsoup,草料二维码API的二维码生成器。
+自己做的一个小工具，基于Python3.5,requests,beautifulsoup(bs4),草料二维码API的二维码生成器。
 
 样例（在test.py中也有）：
 from qrcode import qrcode_text_link
