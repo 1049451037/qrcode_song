@@ -20,3 +20,14 @@ def qrcode_text_png(text , filepath='./' , filename='qrcode_song.png'):
     r = requests.get(link)
     with open(filepath+filename,'wb') as f:
         f.write(r.content)
+
+def qrcode_link_link(link):
+    return qrcode_text_link('//'+link)
+
+def qrcode_link_png(link , filepath='./' , filename='qrcode2_song.png'):
+    if link=='':
+        return None
+    _link = qrcode_link_link(link)
+    r = requests.get(_link)
+    with open(filepath+filename,'wb') as f:
+        f.write(r.content)
