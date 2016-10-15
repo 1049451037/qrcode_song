@@ -11,8 +11,8 @@ print(qrcode_text_link('abc'))<br>
 ####qrcode_text_link函数可以返回参数文本的二维码网页链接（访问该网页就可以看到二维码图片）
 <br><br><br>
 
-qrcode_text_png('abc')<br>
-####qrcode_text_png函数可以把文本的二维码保存到本地，另外还有两个参数filepath和filename，默认值分别为'./'和'qrcode_song.png'
+qrcode_text_png('abc',1)<br>
+####qrcode_text_png函数可以把文本的二维码保存到本地，传入非零mode参数可以启用美化模式，另外还有两个参数filepath和filename，默认值分别为'./'和'qrcode_song.png'
 <br><br><br>
 
 print(qrcode_link_link('www.baidu.com'))<br>
