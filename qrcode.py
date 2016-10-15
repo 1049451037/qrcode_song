@@ -21,6 +21,7 @@ def qrcode_text_png(text ,mode=0, filepath='./' , filename='qrcode_song.png'):
     r = requests.get(link)
     with open(filepath+filename,'wb') as f:
         f.write(r.content)
+	return r.content
 
 def qrcode_link_link(link,mode=0):
     return qrcode_text_link('//'+link,mode=mode)
@@ -32,3 +33,4 @@ def qrcode_link_png(link , mode=0 , filepath='./' , filename='qrcode2_song.png')
     r = requests.get(_link)
     with open(filepath+filename,'wb') as f:
         f.write(r.content)
+	return r.content
