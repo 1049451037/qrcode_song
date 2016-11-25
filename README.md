@@ -12,4 +12,5 @@ myqrcode.link_png(link='www.baidu.com',filepath='./',filename='test2.png') #实�
 
 ```
 
-<br>注：以上功能需要在联网的条件下实现。（因为基于网页爬虫）
+<br>
+注：以上功能需要在联网的条件下实现。（因为基于网页爬虫）
