@@ -1,5 +1,6 @@
 # qrcode_song
-自己做的一个小工具，基于Python3.5,requests,beautifulsoup(bs4),草料二维码API的二维码生成器。<br>
+自己做的一个小工具，基于python爬虫和草料二维码API的二维码生成器。<br>
+环境要求：Python3.5,requests,beautifulsoup(bs4)<br>
 
 ## 主要功能：
 1.生成（爬取）文本的二维码图片并保存到本地；<br>
