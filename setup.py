@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='qrcode_song',
-      version='0.2',
+      version='0.3',
       description='A qrcode generator based on cli-qrcode and web crawler.',
       url='https://github.com/1049451037/qrcode_song',
       author='Qingsong Lv',

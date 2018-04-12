@@ -24,16 +24,6 @@ def get_png_by_url(url):
     r = requests.get(url)
     return r.content
 
-def get_text_png_by_text(text, black = False):
-    if text == '':
-        return None
-    link = get_pngurl_by_text(text, black = black)
-    return get_png_by_url(link)
-
-def get_url_png_by_url(url, black = False):
-    link = get_pngurl_by_url(url, black = black)
-    return get_png_by_url(link)
-
 def save_png(img, fn):
     with open(fn, 'wb') as f:
         f.write(img)
