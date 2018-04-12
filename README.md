@@ -14,26 +14,36 @@ Auxiliary functions:
 * Get binary qrcode image content by URL.
 * Save qrcode image to disk.
 
-# Sample(test.py)
-```Python
-import myqrcode
+# Install
+1. Download this repository.
+2. Change current directory into this folder.
+3. (Optional) Run test code.
+    ```
+    python test.py
+    ```
+    You will get two qrcode urls and two images.
+4. Installation.
+    ```
+    pip install .
+    ```
+5. Test in terminal.
+    ```
+    >>> import qrcode_song as qs
+    >>> qs.get_pngurl_by_text('wow')
+    'https://qr.api.cli.im/qr?...e6eb'
+    ```
 
-print(myqrcode.text_link(text='你好'))  # 文本二维码图片的链接
-myqrcode.text_png(text='你好', mode=1 ,filepath='./',filename='test1.png')  # 二维码图片保存到本地，mode调整美化模式
-print(myqrcode.link_link(link='www.baidu.com')) # 网址的二维码图片的链接（这里不要加http://或者https://）
-myqrcode.link_png(link='www.baidu.com',filepath='./',filename='test2.png') # 实际上函数还会返回图片的二进制存储
-```
-
-# Goal
-1. Usage
+# Tutorial
+Actually, you will know all functions of this project in test.py.
 ```Python
 import qrcode_song as qs
 
-url = qs.geturl('hello')
-image = qs.getimage(url)
-qs.save(image)
-```
-2. Install
-```
-pip install qrcode_song
+url1 = qs.get_pngurl_by_text('hello', black = True)
+print(url1)
+img1 = qs.get_png_by_url(url1)
+qs.save_png(img1, './hello.png')
+url2 = qs.get_pngurl_by_url('http://www.baidu.com')
+print(url2)
+img2 = qs.get_png_by_url(url2)
+qs.save_png(img2, './baidu.png')
 ```

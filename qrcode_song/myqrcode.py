@@ -1,39 +1,39 @@
 import requests
 from bs4 import BeautifulSoup
 
-
-def text_link(text, mode=0):
+def get_pngurl_by_text(text, black = False):
     if text == '':
         return None
     param = {'text': text}
-    if mode != 0:
+    if not black:
         param['mhid'] = 'thGTD1zpnZohMHcuI9BUPqo'
     url = 'https://cli.im/api/qrcode/code'
-    r = requests.get(url, params=param)
+    r = requests.get(url, params = param)
     soup = BeautifulSoup(r.text, 'html.parser')
     img = soup.img
     return 'https:' + img['src']
 
+def get_pngurl_by_url(url, black = False):
+    if url.startswith('http://'):
+        url = url[5:]
+    elif url.startswith('https://'):
+        url = url[6:]
+    return get_pngurl_by_text('//' + url, black = black)
 
-def text_png(text, mode=0, filepath='./', filename='qrcode_song.png'):
+def get_png_by_url(url):
+    r = requests.get(url)
+    return r.content
+
+def get_text_png_by_text(text, black = False):
     if text == '':
         return None
-    link = text_link(text, mode=mode)
-    r = requests.get(link)
-    with open(filepath + filename, 'wb') as f:
-        f.write(r.content)
-    return r.content
+    link = get_pngurl_by_text(text, black = black)
+    return get_png_by_url(link)
 
+def get_url_png_by_url(url, black = False):
+    link = get_pngurl_by_url(url, black = black)
+    return get_png_by_url(link)
 
-def link_link(link, mode=0):
-    return text_link('//' + link, mode=mode)
-
-
-def link_png(link, mode=0, filepath='./', filename='qrcode2_song.png'):
-    if link == '':
-        return None
-    _link = link_link(link, mode=mode)
-    r = requests.get(_link)
-    with open(filepath + filename, 'wb') as f:
-        f.write(r.content)
-    return r.content
+def save_png(img, fn):
+    with open(fn, 'wb') as f:
+        f.write(img)
