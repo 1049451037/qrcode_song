@@ -15,9 +15,9 @@ def get_pngurl_by_text(text, black = False):
 
 def get_pngurl_by_url(url, black = False):
     if url.startswith('http://'):
-        url = url[5:]
+        url = url[7:]
     elif url.startswith('https://'):
-        url = url[6:]
+        url = url[8:]
     return get_pngurl_by_text('//' + url, black = black)
 
 def get_png_by_url(url):
