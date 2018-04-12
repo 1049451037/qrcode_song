@@ -1,5 +1,5 @@
 # qrcode_song
-A qrcode generator(crawler) based on cli-qrcode and web spider.
+A qrcode generator(crawler) based on [cli-qrcode](https://cli.im/) and web spider.
 
 # Requirement
 * Python3.5+
