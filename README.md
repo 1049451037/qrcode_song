@@ -9,6 +9,7 @@ A qrcode generator(crawler) based on cli-qrcode and web spider.
 
 # Function
 Main function: Generate(crawler) a qrcode image and return the URL of that qrcode image.
+
 Auxiliary functions:
 * Get binary qrcode image content by URL.
 * Save qrcode image to disk.
