@@ -2,7 +2,7 @@
 A qrcode generator(crawler) based on [cli-qrcode](https://cli.im/) and web spider.
 
 # Requirements
-* Python3.5+
+* Python 2 or Python 3
 * requests
 * beautifulsoup(bs4)
 * Internet
@@ -21,7 +21,7 @@ Auxiliary functions:
     ```shell
     python test.py
     ```
-    You will get two qrcode urls and two images.
+    You will get two qrcode images.
 4. Installation.
     ```shell
     pip install .
@@ -39,12 +39,12 @@ Actually, you will know all functions of this project in test.py.
 import qrcode_song as qs
 
 url1 = qs.get_pngurl_by_text('hello world', black = True)
-print(url1)
+# print url1 or print(url1)
 img1 = qs.get_png_by_url(url1)
 qs.save_png(img1, './hello.png')
 
 url2 = qs.get_pngurl_by_url('http://www.baidu.com') # this function also has 'black' parameter
-print(url2)
+# print url2 or print(url2)
 img2 = qs.get_png_by_url(url2)
 qs.save_png(img2, './baidu.png')
 ```
