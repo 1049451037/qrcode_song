@@ -48,3 +48,6 @@ url2 = qs.get_pngurl_by_url('http://www.baidu.com') # this function also has 'bl
 img2 = qs.get_png_by_url(url2)
 qs.save_png(img2, './baidu.png')
 ```
+# To Do
+* Add proxy access
+* Show qrcode in terminal
