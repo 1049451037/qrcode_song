@@ -49,5 +49,6 @@ img2 = qs.get_png_by_url(url2)
 qs.save_png(img2, './baidu.png')
 ```
 # To Do
+* Publish to PyPI
 * Add proxy access
 * Show qrcode in terminal
