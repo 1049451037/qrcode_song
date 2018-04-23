@@ -1,5 +1,5 @@
 # qrcode_song
-A qrcode generator(crawler) based on [cli-qrcode](https://cli.im/) and web spider.
+A qrcode generator(crawler) based on [cli-qrcode](https://cli.im/) and web spider. Read documents [here](http://qrcode-song.readthedocs.io/en/latest/).
 
 # Requirements
 * Python 2 or Python 3
@@ -18,23 +18,29 @@ Auxiliary functions:
 1. Download this repository.
 2. Change current directory into this folder.
 3. (Optional) Run test code.
-    ```shell
-    python test.py
-    ```
-    You will get two qrcode images.
+
+```shell
+python test.py
+```
+
+You will get two qrcode images.
 4. Installation.
-    ```shell
-    pip install .
-    ```
+
+```shell
+pip install .
+```
+
 5. Test in terminal.
-    ```python
-    >>> import qrcode_song as qs
-    >>> qs.get_pngurl_by_text('wow')
-    'https://qr.api.cli.im/qr?...e6eb'
-    ```
+
+```python
+>>> import qrcode_song as qs
+>>> qs.get_pngurl_by_text('wow')
+'https://qr.api.cli.im/qr?...e6eb'
+```
 
 # Tutorial
 Actually, you will know all functions of this project in test.py.
+
 ```python
 import qrcode_song as qs
 
@@ -48,6 +54,7 @@ url2 = qs.get_pngurl_by_url('http://www.baidu.com') # this function also has 'bl
 img2 = qs.get_png_by_url(url2)
 qs.save_png(img2, './baidu.png')
 ```
+
 # To Do
 * Publish to PyPI
 * Add proxy access
