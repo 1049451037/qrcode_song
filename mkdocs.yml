@@ -1,0 +1,12 @@
+site_name: qrcode_song
+pages:
+    - Home: index.md
+    - About: about.md
+theme: readthedocs
+
+markdown_extensions: 
+    - pymdownx.arithmatex
+
+extra_javascript:
+  - mathjax-config.js
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
