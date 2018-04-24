@@ -19,15 +19,21 @@ Auxiliary functions:
 1. Download this repository.
 2. Change current directory into this folder.
 3. (Optional) Run test code.
+
 ```shell
 python test.py
 ```
-    You will get two qrcode images.
+
+You will get two qrcode images.
+
 4. Installation.
+
 ```shell
 pip install .
 ```
+
 5. Test in terminal.
+
 ```python
 >>> import qrcode_song as qs
 >>> qs.get_pngurl_by_text('wow')
