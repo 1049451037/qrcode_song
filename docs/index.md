@@ -1,16 +1,22 @@
 # qrcode_song
+
 A qrcode generator(crawler) based on [cli-qrcode](https://cli.im/) and web spider. Read documents [here](http://qrcode-song.readthedocs.io/en/latest/).
 
 # Requirements
+
 * Python 2 or Python 3
 * requests
 * beautifulsoup(bs4)
 * Internet
 
 # Functions
-Main function: Generate(crawler) a qrcode image and return the URL of that qrcode image.
+
+Main function:
+
+* Generate(crawler) a qrcode image and return the URL of that qrcode image.
 
 Auxiliary functions:
+
 * Get binary qrcode image content by URL.
 * Save qrcode image to disk.
 
@@ -41,6 +47,7 @@ pip install .
 ```
 
 # Tutorial
+
 Actually, you will know all functions of this project in test.py.
 
 ```python
@@ -58,6 +65,7 @@ qs.save_png(img2, './baidu.png')
 ```
 
 # To Do
+
 * Publish to PyPI
 * Add proxy access
 * Show qrcode in terminal
