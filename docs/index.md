@@ -1,6 +1,6 @@
 # qrcode_song
 
-A qrcode generator(crawler) based on [cli-qrcode](https://cli.im/) and web spider. Read documents [here](http://qrcode-song.readthedocs.io/en/latest/).
+A qrcode generator(crawler) based on [cli-qrcode](https://cli.im/) and web spider. See source code [here](https://github.com/1049451037/qrcode_song).
 
 # Requirements
 
