@@ -1,4 +1,0 @@
-site_name: qrcode_song
-pages:
-    - Home: index.md
-theme: readthedocs
