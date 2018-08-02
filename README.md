@@ -4,7 +4,7 @@ A qrcode generator(crawler) based on [cli-qrcode](https://cli.im/) and web spide
 
 # Requirements
 
-* Python 2 or Python 3
+* Python 3
 * requests
 * beautifulsoup(bs4)
 * Internet
