@@ -22,29 +22,17 @@ Auxiliary functions:
 
 # Installation
 
-1. Download this repository.
-2. Change current directory into this folder.
-3. (Optional) Run test code.
-
-    ```shell
-    python test.py
-    ```
+```shell
+pip install qrcode-song
+```
     
-    You will get two qrcode images.
-    
-4. Installation.
+# Test
 
-    ```shell
-    pip install .
-    ```
-    
-5. Test in terminal.
-
-    ```python
-    >>> import qrcode_song as qs
-    >>> qs.get_pngurl_by_text('wow')
-    'https://qr.api.cli.im/qr?...e6eb'
-    ```
+```python
+>>> import qrcode_song as qs
+>>> qs.get_pngurl_by_text('wow')
+'https://qr.api.cli.im/qr?...e6eb'
+```
 
 # Tutorial
 
@@ -63,9 +51,3 @@ url2 = qs.get_pngurl_by_url('http://www.baidu.com') # this function also has 'bl
 img2 = qs.get_png_by_url(url2)
 qs.save_png(img2, './baidu.png')
 ```
-
-# To Do
-
-* Publish to PyPI
-* Add proxy access
-* Show qrcode in terminal

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: qrcode-song
+Version: 0.3
+Summary: A qrcode generator based on cli-qrcode and web crawler.
+Home-page: https://github.com/1049451037/qrcode_song
+Author: Qingsong Lv
+Author-email: lqs@mail.bnu.edu.cn
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

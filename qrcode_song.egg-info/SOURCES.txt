@@ -1,0 +1,10 @@
+README.md
+setup.py
+qrcode_song/__init__.py
+qrcode_song/myqrcode.py
+qrcode_song.egg-info/PKG-INFO
+qrcode_song.egg-info/SOURCES.txt
+qrcode_song.egg-info/dependency_links.txt
+qrcode_song.egg-info/not-zip-safe
+qrcode_song.egg-info/requires.txt
+qrcode_song.egg-info/top_level.txt
